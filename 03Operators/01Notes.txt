@@ -1,0 +1,98 @@
+What is an Operator?
+--------------------
+
+An operator is a symbol used to perform operations on variables and values.
+
+Types of Operators in Java
+--------------------------
+
+1. Arithmetic Operators
+-----------------------
+
+Used for mathematical operations
+
+| Operator | Meaning             | Example |
+| -------- | ------------------- | ------- |
+| `+`      | Addition            | `a + b` |
+| `-`      | Subtraction         | `a - b` |
+| `*`      | Multiplication      | `a * b` |
+| `/`      | Division            | `a / b` |
+| `%`      | Modulus (remainder) | `a % b` |
+
+
+2. Relational (Comparison) Operators
+------------------------------------
+
+Used to compare values → result is true/false
+
+| Operator | Meaning          | Example  |
+| -------- | ---------------- | -------- |
+| `==`     | Equal to         | `a == b` |
+| `!=`     | Not equal        | `a != b` |
+| `>`      | Greater than     | `a > b`  |
+| `<`      | Less than        | `a < b`  |
+| `>=`     | Greater or equal | `a >= b` |
+| `<=`     | Less or equal    | `a <= b` |
+
+
+3. Logical Operators
+--------------------
+
+Used with boolean values
+
+| Operator | Meaning | Example              |
+| -------- | ------- | -----------------    |
+| `&&`     | AND     | true if both true    | 
+| `||`     | OR      | true if any one true |
+| `!`      | NOT     | reverses value       |
+
+
+4. Assignment Operators
+-----------------------
+
+Used to assign values
+
+| Operator | Example  | Meaning   |
+| -------- | -------- | --------- |
+| `=`      | `a = 10` | Assign    |
+| `+=`     | `a += 5` | a = a + 5 |
+| `-=`     | `a -= 5` | a = a - 5 |
+| `*=`     | `a *= 2` | a = a * 2 |
+| `/=`     | `a /= 2` | a = a / 2 |
+
+
+5. Unary Operators
+------------------
+
+Work on single operand
+
+| Operator | Example        |
+| -------- | -------        |
+| `+`      | `+a`           |
+| `-`      | `-a`           |
+| `++`     | `++a`, `a++`   | Increment & Decrement Operators
+| `--`     | `--a`, `a--`   | Increment & Decrement Operators
+| `!`      | `!true`        |
+
+
+6. Ternary Operator
+-------------------
+
+Shortcut for if-else
+
+Syntax:
+-------
+
+condition ? value1 : value2;
+
+7. Bitwise Operators
+--------------------
+
+Work on binary values.
+
+| Operator | Meaning |
+| -------- | ------- |
+| `&`      | AND     |
+| `|`      | OR      |
+| `^`      | XOR     |
+| `~`      | NOT     |

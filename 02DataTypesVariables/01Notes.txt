@@ -1,0 +1,47 @@
+Java Data Types
+---------------
+
+In Java, data types define what kind of data a variable can store.
+
+There are Two Types of Java Data Types
+--------------------------------------
+
+1. Primitive Data Types (Built-in)
+
+These are basic types provided by Java.
+
+| Data Type | Size    | Example             | Description              |
+| --------- | ------- | ------------------- | ------------------------ |
+| `byte`    | 1 byte  | `byte a = 10;`      | Small integer            |
+| `short`   | 2 bytes | `short b = 200;`    | Medium integer           |
+| `int`     | 4 bytes | `int c = 1000;`     | Default integer          |
+| `long`    | 8 bytes | `long d = 10000L;`  | Large integer            |
+| `float`   | 4 bytes | `float e = 10.5f;`  | Decimal (less precision) |
+| `double`  | 8 bytes | `double f = 20.99;` | Decimal (high precision) |
+| `char`    | 2 bytes | `char g = 'A';`     | Single character         |
+| `boolean` | 1 bit   | `boolean h = true;` | True/False               |
+
+
+2. Non-Primitive Data Types (Reference Types)
+---------------------------------------------
+
+These store addresses (references) of objects.
+
+Examples:
+---------
+
+1. String
+2. Arrays
+3. Classes
+4. Interfaces
+
+
+What is a Variable?
+-------------------
+
+A variable is a container used to store data.
+
+Syntax:
+-------
+
+dataType variableName = value;
