@@ -1,0 +1,33 @@
+The most common way to take input from the keyboard is using the Scanner class.
+
+1. Using Scanner (Most Common)
+
+What it is:
+-----------
+
+Scanner is a simple and beginner-friendly way to take input from the user.
+
+When to use:
+------------
+
+1. When you are learning Java
+2. When input size is small
+3. When you want easy syntax
+
+Important Scanner Methods:
+--------------------------
+
+| Method         | Description             | Example       |
+| -------------- | ----------------------- | ------------- |
+| `nextLine()`   | Read full line (String) | "Hello World" |
+| `next()`       | Read single word        | "Hello"       |
+| `nextInt()`    | Read integer            | 25            |
+| `nextDouble()` | Read decimal number     | 10.5          |
+| `nextFloat()`  | Read float              | 5.2           |
+
+
+BufferedReader Methods in Java 
+------------------------------
+
+BufferedReader is used to read text input efficiently from the keyboard or a file.
+
