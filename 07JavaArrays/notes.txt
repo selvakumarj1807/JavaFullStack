@@ -1,0 +1,11 @@
+Java Arrays
+
+An array in Java is used to store multiple values of the same data type in a single variable.
+
+Simple Explanation
+
+Instead of creating many variables, you can store all values inside one array.
+
+Syntax
+
+dataType[] arrayName = new dataType[size];

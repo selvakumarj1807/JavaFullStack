@@ -1,0 +1,115 @@
+Java Collections
+----------------
+
+Collections in Java are used to store and manage groups of objects dynamically.
+
+Simple Explanation
+
+An array has a fixed size, but collections can grow or shrink automatically.
+
+“Grow or shrink automatically” means:
+-------------------------------------
+
+1. In a Java array, you must decide the size in advance.
+Example: If you create an array of size 5, it can only hold 5 elements — no more, no less.
+
+2. In a Java collection (like ArrayList), the size changes by itself:
+When you add elements, it grows (increases size)
+When you remove elements, it shrinks (decreases size)
+
+Collections are useful when you want to:
+----------------------------------------
+
+1. Add data dynamically
+2. Remove data easily
+3. Search and sort data
+
+Common Collection Types:
+------------------------
+
+1. ArrayList → Ordered collection, allows duplicates
+2. LinkedList → Fast insertion and deletion
+3. HashSet → Stores unique values
+4. HashMap → Stores key-value pairs
+
+1. Simple Example Using ArrayList
+---------------------------------
+ArrayList is one of the most commonly used collections.
+
+Stores data in order and allows duplicate values.
+
+Simple Explanation
+------------------
+
+1. Maintains insertion order
+2. Allows duplicate elements
+3. Easy to access(get) using index
+
+2. LinkedList
+-------------
+
+Stores data with fast insertion and deletion.
+
+Simple Explanation
+------------------
+
+1. Good for adding/removing elements
+2. Maintains insertion order
+3. Allows duplicates
+
+3. HashSet
+----------
+
+Stores only unique values.
+
+Simple Explanation
+------------------
+
+1. Does not allow duplicates
+2. No fixed order
+3. Faster searching
+
+4. HashMap
+----------
+
+Stores data in key-value pairs.
+
+Simple Explanation
+------------------
+
+1. Each value has a key
+2. Keys must be unique
+3. Useful for storing related data
+
+Summary
+-------
+
+| Collection Type | Feature                    |
+| --------------- | -------------------------- |
+| `ArrayList`     | Ordered, allows duplicates |
+| `LinkedList`    | Fast insert/delete         |
+| `HashSet`       | Unique values only         |
+| `HashMap`       | Key-value pair storage     |
+
+
+Java Collection Methods
+-----------------------
+
+Collection methods are used to perform operations like adding, removing, searching, 
+and checking data in collections such as ArrayList.
+
+Common Collection Methods
+-------------------------
+
+Summary
+-------
+
+| Method       | Purpose            |
+| ------------ | ------------------ |
+| `add()`      | Add element        |
+| `remove()`   | Remove element     |
+| `contains()` | Search element     |
+| `size()`     | Count elements     |
+| `get()`      | Access element     |
+| `clear()`    | Remove all         |
+| `isEmpty()`  | Check empty or not |

@@ -1,0 +1,48 @@
+Loop Statements:
+----------------
+
+Java loop statements are used to repeat a block of code multiple times until a condition becomes false.
+
+Types of Loop Statements in Java
+1. for Loop
+
+Used when you know how many times the loop should run.
+
+Syntax:
+
+for(initialization; condition; increment/decrement){
+    // code
+}
+
+2. while Loop
+
+Used when you want to repeat code while a condition is true.
+
+Syntax:
+
+while(condition){
+    // code
+}
+
+3. do-while Loop
+
+Used when the code should run at least one time.
+
+Syntax:
+
+do{
+    // code
+}while(condition);
+
+4. Enhanced for Loop (for-each)
+
+Used to loop through arrays or collections.
+
+Summary:
+--------
+
+1. for → Fixed number of repetitions
+2. while → Runs while condition is true
+3. do-while → Runs at least one time
+4. for-each → Used for arrays and collections.
+(A for-each loop automatically goes through every item in an array or collection.)
