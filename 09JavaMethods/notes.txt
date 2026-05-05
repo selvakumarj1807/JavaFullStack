@@ -1,0 +1,55 @@
+What is a Method?
+-----------------
+
+A method in Java is a block of code that performs a specific task.
+
+Think of it like a function:
+----------------------------
+
+1. You write once
+2. You can use it many times
+
+Why Use Methods?
+----------------
+
+1. Avoid repeating code
+2. Makes program easy to understand
+3. Helps in debugging
+4. Reusable logic
+
+Basic Structure of a Method
+---------------------------
+
+Return Type:
+------------
+
+returnType methodName(parameters) {
+    // code
+    return value;
+}
+
+No Return Type
+--------------
+
+void methodName(parameters) {
+    // code
+}
+
+Types of Methods in Java
+------------------------
+
+1. Method Without Parameters & Without Return Value
+2. Method Without Parameters but With Return Value
+3. Method With Parameters but Without Return Value
+4. Method With Parameters and Return Value
+5. Static Method(No need to create object)
+6. Method Overloading (Same Name, Different Parameters)
+
+Key Points to Remember
+----------------------
+
+1. Method = reusable block of code
+2. void = no return value
+3. return = sends value back
+4. static = no object needed
+5. Method Overloading = same name, different inputs
