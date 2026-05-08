@@ -1,0 +1,169 @@
+String in Java
+--------------
+
+A String is a sequence of characters used to store text.
+
+Example:
+--------
+
+String name = "Selva";
+
+Strings in Java are immutable
+→ once created, the value cannot be changed.
+
+Common String Methods
+---------------------
+
+| Method          | Description             |
+| --------------- | ----------------------- |
+| `length()`      | Returns string length   |
+| `toUpperCase()` | Converts to uppercase   |
+| `toLowerCase()` | Converts to lowercase   |
+| `charAt()`      | Gets character by index |
+| `contains()`    | Checks word exists      |
+| `substring()`   | Extracts part of string |
+| `equals()`      | Compares strings        |
+
+StringBuffer in Java
+--------------------
+
+StringBuffer is used to create mutable strings.
+
+Mutable means:
+--------------
+→ we can change the value without creating a new object.
+
+It is:
+------
+1. Slower
+2. Thread-safe
+
+Used in:
+--------
+1. Banking systems
+2. Multi-thread applications
+
+Common StringBuffer Methods
+---------------------------
+
+| Method      | Description        |
+| ----------- | ------------------ |
+| `append()`  | Adds text          |
+| `insert()`  | Inserts text       |
+| `replace()` | Replaces text      |
+| `delete()`  | Deletes characters |
+| `reverse()` | Reverses string    |
+
+
+StringBuilder in Java
+---------------------
+
+StringBuilder is similar to StringBuffer.
+StringBuilder is used to create and modify mutable strings efficiently.
+
+Difference:
+-----------
+
+1. Faster
+2. Not thread-safe
+
+Used in:
+--------
+
+1. Web applications
+2. Games
+3. Simple applications
+
+Common StringBuilder Methods
+----------------------------
+
+| Method        | Description                       |
+| ------------- | --------------------------------- |
+| `append()`    | Adds text at the end              |
+| `insert()`    | Inserts text at specific position |
+| `replace()`   | Replaces characters               |
+| `delete()`    | Deletes characters                |
+| `reverse()`   | Reverses string                   |
+| `length()`    | Returns length                    |
+| `charAt()`    | Returns character at index        |
+| `setCharAt()` | Changes character                 |
+| `substring()` | Extracts part of string           |
+| `capacity()`  | Returns storage capacity          |
+
+
+Difference Between StringBuffer & StringBuilder
+-----------------------------------------------
+
+| Feature     | StringBuffer      | StringBuilder      |
+| ----------- | ----------------- | ------------------ |
+| Thread Safe | Yes               | No                 |
+| Speed       | Slower            | Faster             |
+| Used In     | Multi-thread apps | Single-thread apps |
+
+
+What is a Thread in Java?
+-------------------------
+A thread is a small unit of execution inside a program.
+
+It allows a program to perform tasks.
+
+Example:
+
+Playing music
+Downloading file
+Typing message
+
+All can run simultaneously using threads.
+
+Single-Thread Application
+-------------------------
+
+A program executes one task at a time.
+
+Flow
+----
+
+Task 1 → Finish
+Task 2 → Finish
+Task 3 → Finish
+
+Only one thread works.
+
+Multi-Thread
+------------
+
+Multi-thread means:
+Multiple threads run simultaneously.
+
+A program can do many tasks at the same time.
+
+Multi-Thread Application
+------------------------
+Applications using multiple threads are called:
+
+        Multi-thread applications
+
+Real-Time Examples
+------------------
+
+| Application    | Threads                       |
+| -------------- | ----------------------------- |
+| YouTube        | Video + Comments + Chat       |
+| WhatsApp       | Send + Receive + Notification |
+| Browser        | Multiple tabs                 |
+| Online Banking | Transactions + SMS + Security |
+
+Multi-Thread Flow
+-----------------
+
+Thread 1 → Download File
+Thread 2 → Play Music
+Thread 3 → Chat Message
+
+| Feature      | Single Thread | Multi Thread          |
+| ------------ | ------------- | --------------------- |
+| Tasks        | One at a time | Multiple at same time |
+| Speed        | Slower        | Faster                |
+| Complexity   | Simple        | Complex               |
+| Memory Usage | Less          | More                  |
+| Example      | Calculator    | Browser               |

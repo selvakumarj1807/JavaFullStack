@@ -9,3 +9,48 @@ Instead of creating many variables, you can store all values inside one array.
 Syntax
 
 dataType[] arrayName = new dataType[size];
+
+Two-Dimensional Array in Java
+-----------------------------
+
+A 2D array looks like a table (rows × columns).
+
+Example:
+--------
+
+1 2 3
+4 5 6
+7 8 9
+
+It has:
+-------
+
+3 rows
+3 columns
+
+Declaration
+-----------
+
+int[][] arr = new int[3][3];
+
+Jagged Array in Java
+--------------------
+
+A Jagged Array is a special type of 2D array where each row can have a different number of columns.
+
+Example
+-------
+
+10 20
+30 40 50
+60 70 80 90
+
+Notice:
+-------
+
+1. Row 1 → 2 values
+2. Row 2 → 3 values
+3. Row 3 → 4 values
+
+This is called a jagged array.
+
