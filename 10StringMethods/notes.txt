@@ -167,3 +167,14 @@ Thread 3 → Chat Message
 | Complexity   | Simple        | Complex               |
 | Memory Usage | Less          | More                  |
 | Example      | Calculator    | Browser               |
+
+Key Concepts Learned
+--------------------
+
+| Concept          | Explanation                           |
+| ---------------- | ------------------------------------- |
+| `extends Thread` | Creates a thread                      |
+| `run()`          | Task performed by thread              |
+| `start()`        | Starts thread execution               |
+| `Thread.sleep()` | Pauses thread temporarily             |
+| Multithreading   | Multiple tasks running simultaneously |

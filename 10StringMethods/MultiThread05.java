@@ -43,5 +43,7 @@ public class MultiThread05 {
 
         m.start();
         d.start();
+
+        System.out.println("Main Thread is Running...");
     }
 }
