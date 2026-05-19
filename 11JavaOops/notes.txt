@@ -1,0 +1,92 @@
+Java OOPs (Object-Oriented Programming)
+---------------------------------------
+
+OOP in Java is a programming Languages based on classes and objects that uses encapsulation, 
+inheritance, polymorphism, and abstraction to build reusable and secure applications.
+
+Java mainly follows 4 OOP Principles:
+-------------------------------------
+    1. Encapsulation
+    2. Inheritance
+    3. Polymorphism
+    4. Abstraction
+
+Class
+-----
+A class is a blueprint/template.
+
+Example:
+--------
+A Car class contains:
+---------------------
+color
+brand
+speed
+start()
+stop()
+
+Object
+------
+An object is the real instance of a class.
+
+Constructor in Java
+-------------------
+
+1. A Constructor is a special method used to initialize objects.
+2. When an object is created, the constructor automatically executes.
+
+Why Constructor is Important?
+-----------------------------
+Without constructor:
+--------------------
+1. object values may remain empty
+2. repeated initialization code increases
+3. object setup becomes difficult
+
+Constructor helps:
+------------------
+1. initialize values
+2. assign memory properly
+3. reduce repetitive code
+4. create ready-to-use objects
+
+Constructor Rules
+-----------------
+
+| Rule                          | Explanation                   |
+| ----------------------------- | ----------------------------- |
+| Constructor name = Class name | Must match exactly            |
+| No return type                | Not even `void`               |
+| Automatically called          | During object creation        |
+| Can be overloaded             | Multiple constructors allowed |
+
+Types of Constructors
+---------------------
+1. Default Constructor
+2. Parameterized Constructor
+3. Copy Constructor (User-defined concept)
+
+1. Default Constructor
+----------------------
+
+A constructor without parameters.
+
+2. Parameterized Constructor
+----------------------------
+A constructor with parameters.
+Used when objects need different values.
+
+3. Copy Constructor (User-Defined Concept)
+------------------------------------------
+Java does NOT provide built-in copy constructor like C++.
+We manually create it.
+
+Purpose
+-------
+Create a new object using another object's data.
+
+Constructor Overloading
+-----------------------
+
+Multiple constructors in same class.
+
