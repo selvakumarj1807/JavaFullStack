@@ -90,3 +90,81 @@ Constructor Overloading
 
 Multiple constructors in same class.
 
+Java Inheritance
+----------------
+Inheritance is one of the main features of Java OOP (Object-Oriented Programming).
+Inheritance allows one class to acquire the properties and methods of another class.
+
+    Parent Class → Superclass / Base Class
+    Child Class → Subclass / Derived Class
+
+Java uses the extends keyword for inheritance.
+
+Why Inheritance?
+----------------
+Inheritance helps to:
+---------------------
+1. Reuse code
+2. Reduce duplicate code
+3. Improve maintainability
+4. Create hierarchical relationships
+
+Syntax of Inheritance
+---------------------
+
+class Parent {
+
+    void display() {
+        System.out.println("Parent Method");
+    }
+}
+
+class Child extends Parent {
+
+}
+
+1. Single Inheritance
+---------------------
+One child class inherits from one parent class.
+
+2. Multilevel Inheritance
+-------------------------
+A class inherits another class, and that child class becomes parent for another class.
+
+3. Hierarchical Inheritance
+---------------------------
+Multiple child classes inherit from one parent class.
+
+4. Multiple Inheritance
+-----------------------
+Java does NOT support multiple inheritance using classes.
+So Use Interface to achieve Multiple Inheritance.
+
+Java Interface
+--------------
+An Interface in Java is used to achieve:
+
+1. Abstraction
+2. Multiple Inheritance
+3. Loose Coupling
+4. Standardization between classes
+
+An interface contains method declarations, and the implementing class provides the method body.
+
+Syntax of Interface
+-------------------
+
+interface InterfaceName {
+
+    void methodName();
+}
+
+Implementation:
+---------------
+
+class ClassName implements InterfaceName {
+
+    public void methodName() {
+
+    }
+}
