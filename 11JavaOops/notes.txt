@@ -168,3 +168,47 @@ class ClassName implements InterfaceName {
 
     }
 }
+
+Java Polymorphism
+-----------------
+Polymorphism is one of the main concepts of Object-Oriented Programming (OOP) in Java.
+
+The word Polymorphism means:
+----------------------------
+"One object can behave in many forms"
+
+In Java, the same method name can perform different actions depending on the situation.
+
+Types of Polymorphism in Java
+-----------------------------
+1. Compile-Time Polymorphism
+----------------------------
+Also called:
+------------
+Method Overloading
+
+Definition
+----------
+When multiple methods have the same name but different parameters.
+
+2. Runtime Polymorphism
+-----------------------
+Also called:
+------------
+Method Overriding
+
+Definition
+----------
+When a child class provides its own implementation of a parent class method.
+The method call is decided during runtime.
+
+Difference Between Overloading and Overriding
+---------------------------------------------
+
+| Feature            | Method Overloading | Method Overriding        |
+| ------------------ | ------------------ | ------------------------ |
+| Occurs In          | Same class         | Parent & Child class     |
+| Parameters         | Must be different  | Must be same             |
+| Return Type        | Can change         | Should be same/covariant |
+| Binding            | Compile Time       | Runtime                  |
+| Inheritance Needed | No                 | Yes                      |
