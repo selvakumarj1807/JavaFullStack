@@ -212,3 +212,94 @@ Difference Between Overloading and Overriding
 | Return Type        | Can change         | Should be same/covariant |
 | Binding            | Compile Time       | Runtime                  |
 | Inheritance Needed | No                 | Yes                      |
+
+
+Java Abstraction
+----------------
+Abstract in Java
+----------------
+Simple Definition
+-----------------
+An abstract class is an incomplete class.
+
+It is used when:
+----------------
+1. some methods are common
+2. some methods must be written by child classes
+
+Abstract class = Incomplete parent class used to force child classes to implement important methods.
+
+What is Abstraction?
+--------------------
+Abstraction means hiding implementation details and showing only the essential features to the user.
+
+In Java, abstraction is mainly achieved using:
+----------------------------------------------
+    1. abstract class
+    2. interface
+
+The main goal:
+--------------
+    1. Focus on what an object does
+    2. Hide how it does it
+
+
+| Feature               | With Abstract                        | Without Abstract      |
+| --------------------- | ------------------------------------ | --------------------- |
+| Object creation       | Cannot create object of parent       | Can create object     |
+| Method implementation | Child MUST implement abstract method | Optional              |
+| Used for              | Rules / compulsory behavior          | Normal reusable class |
+| Incomplete class      | Yes                                  | No                    |
+| Safety                | More safe                            | Less safe             |
+
+
+Java Encapsulation
+------------------
+What is Encapsulation?
+----------------------
+Encapsulation means:
+--------------------
+    1. Wrapping data and methods into a single unit (class)
+    2. Restricting direct access to data
+
+It is achieved using:
+---------------------
+    1. private variables
+    2. getter/setter methods
+
+Abstraction vs Encapsulation
+----------------------------
+
+| Feature           | Abstraction                | Encapsulation           |
+| ----------------- | -------------------------- | ----------------------- |
+| Focus             | Hiding implementation      | Hiding data             |
+| Achieved Using    | Abstract class / Interface | Private variables       |
+| Purpose           | Reduce complexity          | Protect data            |
+| Real-Time Example | Payment Gateway            | Bank Account            |
+| User Knows        | What operation happens     | Limited access only     |
+| User Doesn't Know | Internal logic             | Internal data structure |
+
+
+this Keyword in Java
+--------------------
+What is this?
+-------------
+this refers to the current object of the class.
+
+It is used to:
+--------------
+    1. Access current class variables
+    2. Call current class methods
+    3. Differentiate local variables and instance variables
+    4. Invoke constructors
+
+Getter and Setter Methods in Java
+---------------------------------
+What are Getter and Setter Methods?
+-----------------------------------
+Getter and Setter methods are used to:
+--------------------------------------
+    1. Access private variables safely
+    2. Update private variables with validation
+
+They are part of Encapsulation.
