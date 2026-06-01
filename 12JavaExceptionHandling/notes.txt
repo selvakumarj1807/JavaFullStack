@@ -1,0 +1,51 @@
+Java Exception Handling
+-----------------------
+
+Java Exception Handling is used to handle runtime errors so that the normal flow of 
+the program will not stop unexpectedly.
+
+An Exception is an unwanted event/error that occurs during program execution.
+
+Why Exception Handling is Important
+-----------------------------------
+Without exception handling, the program may terminate suddenly.
+
+Example:
+--------
+    1. Dividing by zero
+    2. Accessing invalid array index
+    3. Reading unavailable file
+    4. Invalid user input
+
+Exception handling helps:
+-------------------------
+    1. Prevent program crash
+    2. Show proper error messages
+    3. Continue program execution
+
+Instead of crashing the application, Java handles these situations using:
+------------------------------------------------------------------------
+    1. try
+    2. catch
+    3. finally
+    4. throw
+    5. throws
+
+
+Syntax
+------
+
+try {
+    // risky code
+}
+catch(Exception e) {
+    // handling code
+}
+
+Difference Between throw and throws in Java
+-------------------------------------------
+
+| Feature              | `throw`                               | `throws`                                           |
+| -------------------- | ------------------------------------- | -------------------------------------------------- |
+| Purpose              | Used to explicitly throw an exception | Used to declare exceptions that a method may throw |
+| Number of Exceptions | One exception at a time               | Multiple exceptions can be declared                |
