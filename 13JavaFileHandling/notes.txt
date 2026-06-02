@@ -1,0 +1,39 @@
+Java File Handling
+------------------
+
+    1. Java File Handling is used to create, read, write, update, and delete files using Java programs.
+    2. It helps applications store data permanently in files instead of temporary memory.
+
+Java File Handling Classes
+--------------------------
+Java provides classes inside:
+-----------------------------
+
+    import java.io.*;
+
+Main classes:
+-------------
+
+| Class          | Purpose                 |
+| -------------- | ----------------------- |
+| File           | Create and manage files |
+| FileWriter     | Write data into file    |
+| FileReader     | Read character data     |
+| BufferedReader | Read line by line       |
+| BufferedWriter | Write efficiently       |
+| PrintWriter    | Easy formatted writing  |
+| Scanner        | Read file data easily   |
+
+
+Important Methods
+-----------------
+
+| Method          | Description        |
+| --------------- | ------------------ |
+| createNewFile() | Creates new file   |
+| write()         | Writes data        |
+| close()         | Closes file        |
+| exists()        | Checks file exists |
+| delete()        | Deletes file       |
+| length()        | Returns file size  |
+| mkdir()         | Creates folder     |
