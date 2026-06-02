@@ -50,6 +50,26 @@ ps.setInt(1, empId);
 
 ResultSet rs = ps.executeQuery();
 
+Step 1: Create Database
+-----------------------
+MySQL Database
+--------------
+
+CREATE DATABASE college;
+
+Step 2: Create Table
+--------------------
+
+USE college;
+
+CREATE TABLE students(
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100),
+    marks DOUBLE
+);
+
+
 Step 1: Download MySQL JDBC Driver
 ----------------------------------
 Download:
@@ -106,41 +126,41 @@ Run Below Commands to connect the DB:
 DBConnection
 ------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar;" DBConnection
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" DBConnection
 
 InsertStudent
 -------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java InsertStudent.java
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java src/InsertStudent.java
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar" InsertStudent
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" InsertStudent
 
 ReadStudents
 ------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java ReadStudents.java 
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java src/ReadStudents.java 
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar" ReadStudents
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" ReadStudents
 
 UpdateStudent
 -------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java UpdateStudent.java
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java src/UpdateStudent.java
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar" UpdateStudent
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" UpdateStudent
 
 DeleteStudent
 -------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java DeleteStudent.java
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java src/DeleteStudent.java
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar" DeleteStudent
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" DeleteStudent
 
 INSERTUsingStatement
 --------------------
 
-javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java INSERTUsingStatement.java
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" src/DBConnection.java src/INSERTUsingStatement.java
 
-java -cp ".;lib/mysql-connector-j-9.7.0.jar" InsertStudent
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;src" InsertStudent
