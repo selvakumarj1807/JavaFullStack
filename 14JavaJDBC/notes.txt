@@ -1,0 +1,146 @@
+Java JDBC (Java Database Connectivity)
+--------------------------------------
+Java JDBC is an API used to connect Java applications with databases.
+
+Using JDBC, Java programs can:
+------------------------------
+    1. Connect to Database
+    2. Insert Data
+    3. Update Data
+    4. Delete Data
+    5. Fetch Data
+
+JDBC Architecture
+-----------------
+
+Java Application
+       ↓
+     JDBC API
+       ↓
+   JDBC Driver
+       ↓
+    Database
+(MySQL, Oracle, etc.)
+
+JDBC Components
+---------------
+
+| Component         | Purpose                 |
+| ----------------- | ----------------------- |
+| DriverManager     | Establish connection    |
+| Connection        | Connect Java with DB    |
+| Statement         | Execute SQL queries     |
+| PreparedStatement | Execute dynamic queries |
+| ResultSet         | Store fetched records   |
+
+PreparedStatement – Execute Dynamic Queries
+-------------------------------------------
+PreparedStatement is used when SQL queries contain dynamic values (values that change at runtime).
+
+Example
+-------
+Suppose you want to find an employee by ID.
+
+int empId = 101;
+
+PreparedStatement ps =
+    con.prepareStatement("SELECT * FROM employee WHERE id = ?");
+
+ps.setInt(1, empId);
+
+ResultSet rs = ps.executeQuery();
+
+Step 1: Download MySQL JDBC Driver
+----------------------------------
+Download:
+---------
+MySQL Connector/J Official Download Page
+----------------------------------------
+
+https://dev.mysql.com/downloads/connector/j/?utm_source=chatgpt.com
+
+Step 2: Choose Platform
+-----------------------
+You will see:
+------------
+Platform:
+---------
+Select:
+-------
+    Platform Independent
+
+Step 3: Download ZIP File
+-------------------------
+Download:
+---------
+    mysql-connector-j-x.x.x.zip
+
+Step 4: Extract ZIP File
+------------------------
+After download:
+--------------
+    Right click ZIP
+Click:
+------
+    Extract Here
+
+Project Structure Now
+---------------------
+
+JDBCProject
+   |
+   |-- lib
+   |     |
+   |     |-- mysql-connector-j-9.x.x.jar (Extract have this file)
+   |
+   |-- src
+         |
+         |-- DBConnection.java
+         |
+         |
+
+
+Run Below Commands to connect the DB:
+-------------------------------------
+
+DBConnection
+------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar;" DBConnection
+
+InsertStudent
+-------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java InsertStudent.java
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" InsertStudent
+
+ReadStudents
+------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java ReadStudents.java 
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" ReadStudents
+
+UpdateStudent
+-------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java UpdateStudent.java
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" UpdateStudent
+
+DeleteStudent
+-------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java DeleteStudent.java
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" DeleteStudent
+
+INSERTUsingStatement
+--------------------
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DBConnection.java INSERTUsingStatement.java
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" InsertStudent
