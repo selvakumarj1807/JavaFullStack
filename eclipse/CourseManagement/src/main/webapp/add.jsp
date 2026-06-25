@@ -31,7 +31,7 @@
               Course</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="view.jsp" style="color: white; font-size: 17px;">View
+            <a class="nav-link active" aria-current="page" href="CourseServlet" style="color: white; font-size: 17px;">View
               Course</a>
           </li>
         </ul>

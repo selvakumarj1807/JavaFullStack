@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   
+   <%@ taglib prefix="c" uri="jakarta.tags.core" %>
 </head>
 
 <body>
@@ -30,11 +33,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-size: 17px;">Add
+            <a class="nav-link active" aria-current="page" href="add.jsp" style="color: white; font-size: 17px;">Add
               Course</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="" style="color: white; font-size: 17px;">View
+            <a class="nav-link active" aria-current="page" href="CourseServlet" style="color: white; font-size: 17px;">View
               Course</a>
           </li>
         </ul>
@@ -60,18 +63,22 @@
       </thead>
       <div class="red"></div>
       <tbody>
+      
+      <c:forEach items="${courses}" var="course">
         <tr bgcolor="#bffef4">
-          <td scope="col">1 |</td>
-          <td scope="col">Java |</td>
-          <td scope="col">Computer |</td>
-          <td scope="col">5 Month |</td>
-          <td scope="col">| 20000</td>
+          <td scope="col"><c:out value="${course.courseid}" /></td>
+          <td scope="col"><c:out value="${course.coursename}" /></td>
+          <td scope="col"><c:out value="${course.category}" /></td>
+          <td scope="col"><c:out value="${course.duration}" /> Months</td>
+          <td scope="col"><c:out value="${course.fees}" /></td>
           <td scope="col">
             <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-edit" aria-hidden="true"></i></a>
           </td>
         </tr>
+        </c:forEach>
+        
       </tbody>
     </table>
   </div>

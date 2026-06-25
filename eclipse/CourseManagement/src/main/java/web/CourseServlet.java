@@ -1,5 +1,6 @@
 package web;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -9,6 +10,7 @@ import model.Course;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 import Dao.CourseDao;
 
@@ -35,7 +37,16 @@ public class CourseServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		// response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		List<Course> courses = dao.getAllCourses();
+
+		System.out.println(courses.size());
+		
+		request.setAttribute("courses", courses);
+		RequestDispatcher view = request.getRequestDispatcher("view.jsp");
+
+		view.forward(request, response);
 	}
 
 	/**
@@ -57,7 +68,7 @@ public class CourseServlet extends HttpServlet {
 		if(courseid == null || courseid.isEmpty()) {
 			dao.addCourse(course);
 			
-			response.sendRedirect("view.jsp");
+			response.sendRedirect("CourseServlet");
 			
 		} else {
 			course.setCourseid(Integer.parseInt(courseid));
