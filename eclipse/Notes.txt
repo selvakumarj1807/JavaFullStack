@@ -1,0 +1,87 @@
+Step 01:
+--------
+Create Dynamic Web Project
+
+Step 02:
+--------
+
+Configure to Maven Project
+
+Step 03:
+--------
+Add Below Dependency in your pom.xml file using https://mvnrepository.com/
+
+1. MySQL Connector/J
+
+2. Jakarta Servlet API
+
+3. Jakarta Standard Tag Library API
+
+4. Jakarta Standard Tag Library Implementation
+
+like
+
+<dependencies>
+  	<!-- Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+	<dependency>
+	    <groupId>com.mysql</groupId>
+	    <artifactId>mysql-connector-j</artifactId>
+	    <version>9.7.0</version>
+	    <scope>compile</scope>
+	</dependency>
+	
+	<!-- Source: https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+	<dependency>
+	    <groupId>jakarta.servlet</groupId>
+	    <artifactId>jakarta.servlet-api</artifactId>
+	    <version>6.2.0-M2</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- Source: https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp.jstl</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+	    <version>3.1.0-M1</version>
+	    <scope>compile</scope>
+	</dependency>
+	
+	<!-- Source: https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+	<dependency>
+	    <groupId>org.glassfish.web</groupId>
+	    <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+	    <version>3.0.1</version>
+	    <scope>compile</scope>
+	</dependency>
+  </dependencies>
+
+Step 04:
+--------
+
+src/main/webapp --> add css, images folder and create jsp files(html files copy paste into jsp files).
+
+Step 05:
+--------
+
+Java Resources --> Select src/main/java & right click then create packages(Dao, db, model, web)
+
+create DbConnect.java(class file) into db package. And Write Using given link  
+
+mysql jdbc connection --> 7.1 Connecting to MySQL Using the JDBC DriverManager ...
+
+https://dev.mysql.com/doc/connector-j/en/connector-j-usagenotes-connect-drivermanager.html
+
+Step 06:
+--------
+
+create Course.java(class file & select abstract inherit method) into model package. And Write Using given values  
+
+	private int courseid;
+	private String coursename;
+	private int duration;
+	private String category;
+
+Write above variables into Course.java file & right click --> Source --> Generate Getter & Setter Function & Select for all above variable
+
+Course.java file & right click --> Source --> Generate toString()
+
