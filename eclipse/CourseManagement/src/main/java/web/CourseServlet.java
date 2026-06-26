@@ -39,6 +39,19 @@ public class CourseServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
+		String action = request.getParameter("action");
+
+	    if (action != null && action.equals("delete")) {
+
+	        int courseid = Integer.parseInt(
+	                request.getParameter("courseid"));
+
+	        dao.deleteCourse(courseid);
+
+	        response.sendRedirect("CourseServlet");
+	        return;
+	    }
+		
 		List<Course> courses = dao.getAllCourses();
 
 		System.out.println(courses.size());

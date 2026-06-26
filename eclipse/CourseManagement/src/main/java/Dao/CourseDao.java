@@ -61,5 +61,19 @@ public class CourseDao {
 		
 		return courses;
 	}
+	
+	public void deleteCourse(int courseid) {
+	    try {
+	        PreparedStatement pst = connection.prepareStatement(
+	                "DELETE FROM course WHERE courseid=?");
+
+	        pst.setInt(1, courseid);
+
+	        pst.executeUpdate();
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
 
 }

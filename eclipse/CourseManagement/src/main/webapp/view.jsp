@@ -72,7 +72,10 @@
           <td scope="col"><c:out value="${course.duration}" /> Months</td>
           <td scope="col"><c:out value="${course.fees}" /></td>
           <td scope="col">
-            <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+            <a href="CourseServlet?action=delete&courseid=${course.courseid}"
+			   onclick="return confirm('Are you sure you want to delete this course?')">
+			   <i class="fa fa-trash" aria-hidden="true"></i>
+			</a>
             <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-edit" aria-hidden="true"></i></a>
           </td>
