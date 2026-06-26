@@ -40,6 +40,24 @@ public class CourseServlet extends HttpServlet {
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		String action = request.getParameter("action");
+		
+		if ("edit".equals(action)) {
+
+	        int courseid =
+	                Integer.parseInt(
+	                        request.getParameter("courseid"));
+
+	        Course course =
+	                dao.getCourseById(courseid);
+
+	        request.setAttribute("course", course);
+
+	        RequestDispatcher rd =
+	                request.getRequestDispatcher("edit.jsp");
+
+	        rd.forward(request, response);
+	        return;
+	    }
 
 	    if (action != null && action.equals("delete")) {
 
@@ -85,6 +103,9 @@ public class CourseServlet extends HttpServlet {
 			
 		} else {
 			course.setCourseid(Integer.parseInt(courseid));
+			dao.updateCourse(course);
+			
+			response.sendRedirect("CourseServlet");
 		}
 	}
 

@@ -64,9 +64,9 @@
       <div class="red"></div>
       <tbody>
       
-      <c:forEach items="${courses}" var="course">
+      <c:forEach items="${courses}" var="course" varStatus="status">
         <tr bgcolor="#bffef4">
-          <td scope="col"><c:out value="${course.courseid}" /></td>
+          <td scope="col">${status.count}</td>
           <td scope="col"><c:out value="${course.coursename}" /></td>
           <td scope="col"><c:out value="${course.category}" /></td>
           <td scope="col"><c:out value="${course.duration}" /> Months</td>
@@ -76,8 +76,10 @@
 			   onclick="return confirm('Are you sure you want to delete this course?')">
 			   <i class="fa fa-trash" aria-hidden="true"></i>
 			</a>
-            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-edit" aria-hidden="true"></i></a>
+            
+            <a href="CourseServlet?action=edit&courseid=${course.courseid}">
+			    <i class="fa fa-edit"></i>
+			</a>
           </td>
         </tr>
         </c:forEach>

@@ -75,5 +75,55 @@ public class CourseDao {
 	        e.printStackTrace();
 	    }
 	}
+	
+	public Course getCourseById(int courseid) {
+	    Course course = null;
+
+	    try {
+	        PreparedStatement pst =
+	                connection.prepareStatement(
+	                        "select * from course where courseid=?");
+
+	        pst.setInt(1, courseid);
+
+	        ResultSet rs = pst.executeQuery(); 
+
+	        if (rs.next()) {
+	            course = new Course();
+
+	            course.setCourseid(rs.getInt("courseid"));
+	            course.setCoursename(rs.getString("coursename"));
+	            course.setDuration(rs.getInt("duration"));
+	            course.setCategory(rs.getString("category"));
+	            course.setFees(rs.getInt("fees"));
+	        }
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+
+	    return course;
+	}
+	
+	public void updateCourse(Course course) {
+	    try {
+	        PreparedStatement pst =
+	                connection.prepareStatement(
+	                "update course set coursename=?, fees=?, category=?, duration=? where courseid=?");
+
+	        pst.setString(1, course.getCoursename());
+	        pst.setInt(2, course.getFees());
+	        pst.setString(3, course.getCategory());
+	        pst.setInt(4, course.getDuration());
+	        pst.setInt(5, course.getCourseid());
+
+	        pst.executeUpdate();
+
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	}
+	
+	
 
 }
